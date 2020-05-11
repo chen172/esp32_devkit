@@ -1,1 +1,8 @@
-apt-get install git wget libncurses-dev flex bison gperf python python-click python-pip python-setuptools python-serial python-cryptography python-future python-pyparsing cmake ninja-build ccache libffi-dev libssl-dev
+1.apt-get install git wget libncurses-dev flex bison gperf python python-click python-pip python-setuptools python-serial python-cryptography python-future python-pyparsing cmake ninja-build ccache libffi-dev libssl-dev
+
+2.mkdir -p ~/esp
+cd ~/esp
+tar -xzf ~/Downloads/xtensa-esp32-elf-gcc8_2_0-esp-2019r2-linux-amd64.tar.gz
+
+3.add export PATH="$HOME/esp/xtensa-esp32-elf/bin:$PATH" to ~/.bashrc
+printenv PATH
