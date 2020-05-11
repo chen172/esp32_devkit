@@ -1,0 +1,1 @@
+apt-get install git wget libncurses-dev flex bison gperf python python-click python-pip python-setuptools python-serial python-cryptography python-future python-pyparsing cmake ninja-build ccache libffi-dev libssl-dev
