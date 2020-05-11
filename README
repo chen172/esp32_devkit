@@ -6,3 +6,12 @@ tar -xzf ~/Downloads/xtensa-esp32-elf-gcc8_2_0-esp-2019r2-linux-amd64.tar.gz
 
 3.add export PATH="$HOME/esp/xtensa-esp32-elf/bin:$PATH" to ~/.bashrc
 printenv PATH
+
+4.git clone -b v4.0 --recursive https://github.com/espressif/esp-idf.git
+
+5.add ~/.bashrc
+export PATH="$HOME/esp/xtensa-esp32-elf/bin:$PATH"
+export IDF_PATH="$HOME/esp/esp-idf-v4.0"
+export PATH="$IDF_PATH/tools:$PATH"
+
+6.python -m pip install --user -r $IDF_PATH/requirements.txt
