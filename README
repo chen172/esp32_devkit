@@ -43,3 +43,7 @@ idf.py -p /dev/ttyUSB0 flash
 
 12.idf.py -p /dev/ttyUSB0 monitor
 Ctrl+]
+
+
+Ref
+https://docs.espressif.com/projects/esp-idf/zh_CN/stable/get-started/index.html#
