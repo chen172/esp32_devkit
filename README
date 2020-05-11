@@ -15,3 +15,31 @@ export IDF_PATH="$HOME/esp/esp-idf-v4.0"
 export PATH="$IDF_PATH/tools:$PATH"
 
 6.python -m pip install --user -r $IDF_PATH/requirements.txt
+
+7.connect usb 
+ls /dev/tty*
+
+8.apt install putty
+pptty
+https://docs.espressif.com/projects/esp-idf/zh_CN/stable/get-started/establish-serial-connection.html
+
+9.cd ~/esp
+cp -r $IDF_PATH/examples/get-started/hello_world .
+
+10.cd ~/esp/hello_world
+idf.py menuconfig
+menuconfig 工具的常见操作见下。
+
+    上下箭头：移动
+    回车：进入子菜单
+    ESC 键：返回上级菜单或退出
+    英文问号：调出帮助菜单（退出帮助菜单，请按回车键）。
+    空格、Y 键``或``N 键：使能/禁用 [*] 配置选项
+    英文问号：调出有关高亮选项的帮助菜单
+    / 键：寻找配置项目
+
+11.idf.py build
+idf.py -p /dev/ttyUSB0 flash
+
+12.idf.py -p /dev/ttyUSB0 monitor
+Ctrl+]
